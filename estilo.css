@@ -209,3 +209,34 @@ button {
 .fundo-branco p {
     color: #a0a0a0;
 }
+
+/* Seção Rodapé */
+.secao-fundo-rodape {
+    background-color: #5d15d0;
+}
+
+.secao-rodape {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 0 10px 0;
+}
+
+.secao-rodape h2 {
+    padding-bottom: 15px;
+}
+
+.img-icone {
+    width: 20px;
+}
+
+.secao-rodate-conteudo div {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.secao-rodate-conteudo p {
+    font-weight: bold;
+}

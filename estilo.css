@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
 .limita-secao {
     max-width: 1024px;
     width: 100%;
@@ -33,8 +38,8 @@
     background-image: url('img/bahia.jpg');
     background-image: cover;
     background-repeat: no-repeat;
-    max-height: 70vh;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .secao-titulo-formulario {
@@ -119,95 +124,103 @@ button {
     border: none;
 }
 
-/* Seção Ofertas */
-.secao-ofertas {
-    background-color: #eaeaea;
-    padding: 40px 0;
+/* Seção ofertas - Seção Natureza */
+.secao-ofertas, .secao-natureza {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 0 auto; 
 }
 
-.secao-ofertas-part1 {
-    margin: 0 auto;
+.ofertas-titulo, .natureza-titulo {
+    font-size: 20px;
+    margin: 0 0 10px 0;
 }
 
-.secao-ofertas-part1 h3, .secao-ofertas-part2 h3 {
-    padding: 10px 0;
+.ofertas-descricao, .natureza-descricao {
+    font-size: 16px;
     font-weight: normal;
+    margin: 0 0 15px 0;
 }
 
-.secao-ofertas-img0 {
+.secao-ofertas-imgs {
+    width: 100%;
+    height: 375px;
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
 }
 
-.img-media {
-    width: 500px;
+.secao-ofertas-img1 {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
 }
 
-.img-pequena {
+.secao-ofertas-img2 {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secao-ofertas-img2 figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.oferta-img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.secao-ofertas-img1 p {
-    color: #fff;
-    position: relative;
-    bottom: 28px;
-    padding: 3px 0px 3px 7px;
-    background: #00000085;
+figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
-}
-
-.secao-ofertas-img2 {
-    display: flex;
-    justify-content: space-between;
-    height: 375px;
-    width: 490px;
-    flex-wrap: wrap;
-}
-
-.secao-ofertas-img2 p {
+    background: rgb(0 0 0 / 50%);
+    font-size: 17px;
     color: #fff;
-    position: relative;
-    bottom: 28px;
-    padding: 3px 0px 3px 7px;
-    background: #00000085;
-    width: 100%;  
+    padding: 5px 10px;
 }
 
-.secao-ofertas-img2 div {
-    height: 180px;
-    width: 240px;
-}
-
-.secao-ofertas-part2 {
-    margin: 0 auto;
-}
-
-.secao-ofertas-img3 {
+.secao-natureza-imgs {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
 }
 
-.secao-ofertas-img3 div {
-    display: flex;
-    flex-direction: column;
-
+.img-natureza {
+    width: calc(50% - 10px);
+    height: 100%;
 }
 
-.fundo-branco {
-    background-color: #fff;
-    margin-top: 5px;
-    padding: 5px 5px 15px 20px;
+.img-natureza img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-.fundo-branco h3 {
-    font-weight: bold;
+.img-natureza div {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 30px;
 }
 
-.fundo-branco p {
-    color: #a0a0a0;
+.img-natureza h3 {
+    font-size: 16px;
+}
+
+.img-natureza p {
+    font-size: 16px;
 }
 
 /* Seção Rodapé */

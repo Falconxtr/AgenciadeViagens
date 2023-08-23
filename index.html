@@ -6,6 +6,7 @@
     <meta name="description" content="A Agência de Viagens encontra o hotel certo para você!">
     <title>Agência de Viagens</title>
     <link rel="stylesheet" href="estilo.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
 </head>
 <body>
     <header class="limita-secao secao-topo"> <!-- Seção Topo -->
@@ -45,12 +46,22 @@
                                 <label>Origem</label>
                                 <select name="origem">
                                     <option value="">Partindo de</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
                                 </select>
                             </div>
                             <div>
                                 <label>Destino</label>
                                 <select name="destino">
                                     <option value="">Indo para</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
                                 </select>
                             </div>
                        </div>
@@ -93,54 +104,52 @@
                 </div>
             </div>
         </section>
-        <section class="secao-ofertas"> <!-- Seção Ofertas -->
-            <div class="limita-secao secao-ofertas-part1">
-                <h2>Ofertas</h2>
-                <h3>Com até <strong>50%</strong> de desconto.</h3>
-                <div class="secao-ofertas-img0">
-                    <div class="secao-ofertas-img1">
-                        <img class="img-media" src="img/rio.jpg" alt="Rio de Janeiro" title="Rio de Janeiro">
-                        <p>Rio de Janeiro</p>
-                    </div>
-                    <div class="secao-ofertas-img2">
-                        <div>
-                            <img class="img-pequena" src="img/manaus.jpg" alt="Manaus" title="Manaus">
-                            <p>Manaus</p>
-                        </div>
-                        <div>
-                            <img class="img-pequena" src="img/niteroi.jpg" alt="Niteroi" title="Niteroi">
-                            <p>Niteroi</p>
-                        </div>
-                        <div>
-                            <img class="img-pequena" src="img/saopaulo.jpg" alt="São Paulo" title="São Paulo">
-                            <p>São Paulo</p>
-                        </div>
-                        <div>
-                            <img class="img-pequena" src="img/maranhao.jpg" alt="Maranhão" title="Maranhão">
-                            <p>Maranhão</p>
-                        </div>
-                    </div>
+        <section class="limita-secao secao-ofertas"> <!-- Seção Ofertas -->
+            <h2 class="ofertas-titulo">Ofertas</h2>
+            <h3 class="ofertas-descricao">Com até <strong>50%</strong> de desconto.</h3>
+            <div class="secao-ofertas-imgs">
+                <figure class="secao-ofertas-img1">
+                    <img class="oferta-img" src="img/rio.jpg" alt="Rio de Janeiro" title="Rio de Janeiro">
+                    <figcaption>Rio de Janeiro</figcaption>
+                </figure>
+                <div class="secao-ofertas-img2">
+                    <figure>
+                        <img class="oferta-img" src="img/manaus.jpg" alt="Manaus" title="Manaus">
+                        <figcaption>Manaus</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="oferta-img" src="img/niteroi.jpg" alt="Niteroi" title="Niteroi">
+                        <figcaption>Niteroi</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="oferta-img" src="img/saopaulo.jpg" alt="São Paulo" title="São Paulo">
+                        <figcaption>São Paulo</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="oferta-img" src="img/maranhao.jpg" alt="Maranhão" title="Maranhão">
+                        <figcaption>Maranhão</figcaption>
+                    </figure>
                 </div>
             </div>
-            <div class="limita-secao secao-ofertas-part2">
-                <h2>Explore a Natureza</h2>
-                <h3>Viaje conosco e veja o melhor que a natureza tem a oforecer.</h3>
-                <div class="secao-ofertas-img3">
-                    <div>
-                        <img class="img-media" src="img/lencol.jpg" alt="Lençol" title="Lençol">
-                        <div class="fundo-branco">
-                            <h3>Lençois Maranhenses, Brasil</h3>
-                            <p>Ida e volta a partir de R$79</p>
-                        </div>
+        </section>
+        <section class="limita-secao secao-natureza"> <!-- Seção Natureza -->
+            <h2 class="natureza-titulo">Explore a Natureza</h2>
+            <h3 class="natureza-descricao">Viaje conosco e veja o melhor que a natureza tem a oforecer.</h3>
+            <div class="secao-natureza-imgs">
+                <figure class="img-natureza">
+                    <img src="img/lencol.jpg" alt="Lençol" title="Lençol">
+                    <div class="fundo-branco">
+                        <h3>Lençois Maranhenses, Brasil</h3>
+                        <p>Ida e volta a partir de R$79</p>
                     </div>
-                    <div>
-                        <img class="img-media" src="img/goias.jpg" alt="Goias" title="Goiais">
-                        <div class="fundo-branco">
-                            <h3>Cachoeira Santa Bárbara, Brasil</h3>
-                            <p>Ida e volta por R$139</p>
-                        </div>
+                </figure>
+                <figure  class="img-natureza">
+                    <img src="img/goias.jpg" alt="Goias" title="Goiais">
+                    <div class="fundo-branco">
+                        <h3>Cachoeira Santa Bárbara, Brasil</h3>
+                        <p>Ida e volta por R$139</p>
                     </div>
-                </div>
+                </figure>
             </div>
         </section>
     </main>

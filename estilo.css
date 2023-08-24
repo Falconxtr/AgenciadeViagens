@@ -11,7 +11,6 @@ body {
 
 .limita-secao {
     max-width: 1024px;
-    width: 100%;
 }
 
 /* Seção Topo */
@@ -23,7 +22,8 @@ body {
 }
 
 .secao-topo img{
-    width: 40px;
+    max-width: 40px;
+    width: 100%;
 }
 
 .secao-topo p {
@@ -94,24 +94,29 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .formulario2 div, .formulario3 div {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    max-width: 477px;
+    width: 100%;
 }
 
 .formulario4 {
     display: flex;
     justify-content: space-between;
-    width: 15%;
+    max-width: 150px;
+    width: 100%;
     margin: 10px 0px;
 }
 
 .formulario5 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
     width: 40%;
     margin: 10px 0px;
 }
@@ -173,13 +178,13 @@ button {
     margin: 0 6px;
 }
 
-.oferta-img {
+.secao-ofertas-img1 img, .secao-ofertas-img2 img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-figcaption {
+.secao-ofertas-img1 figcaption, .secao-ofertas-img2 figcaption {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -221,35 +226,46 @@ figcaption {
 
 .img-natureza p {
     font-size: 16px;
+    margin: 15px 0 0 0px;
 }
 
 /* Seção Rodapé */
 .secao-fundo-rodape {
     background-color: #5d15d0;
+    width: 100%;
+    margin: 32px 0 0 0;
 }
 
 .secao-rodape {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    color: #fff;
-    padding: 15px 0 10px 0;
+    margin: 0 auto;
+}
+
+.secao-rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
 }
 
 .secao-rodape h2 {
-    padding-bottom: 15px;
+    color: #fff;
+    margin: 0 0 15px 0;
+    font-size: 20px;
 }
 
 .img-icone {
     width: 20px;
 }
 
-.secao-rodate-conteudo div {
+.secao-rodape-conteudo div {
     display: flex;
-    gap: 10px;
-    padding-bottom: 10px;
+    align-items: center;
+    margin: 5px 0;
 }
 
-.secao-rodate-conteudo p {
-    font-weight: bold;
+.secao-rodape-conteudo p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 10px;
 }

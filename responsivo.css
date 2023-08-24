@@ -1,8 +1,4 @@
 @media (max-width: 540px) {
-    .formulario2, .formulario3 {
-        gap: 0px;
-    }
-
     .formulario4, .formulario5 {
         flex-direction: column;
         gap: 20px;
@@ -24,13 +20,21 @@
         width: 100%;
     }
     
-    /* Seção Formulário */
+    /* Seção Formulário */  
     .secao-titulo-formulario h1 {
         font-size: 14px;
     }
 
     .secao-formulario-part2 h2 {
         font-size: 20px;
+    }
+
+    .formulario2 div, .formulario3 div {
+        width: 100%;
+    }
+
+    .formulario5 {
+        width: 80%;
     }
 
     button {

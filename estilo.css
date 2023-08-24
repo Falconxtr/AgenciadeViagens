@@ -93,15 +93,13 @@ body {
 .formulario2, .formulario3 {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     flex-wrap: wrap;
 }
 
 .formulario2 div, .formulario3 div {
     display: flex;
     flex-direction: column;
-    max-width: 477px;
-    width: 100%;
+    width: 49.2%;
 }
 
 .formulario4 {
